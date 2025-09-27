@@ -1,5 +1,5 @@
 # LS and Color Commands
-alias ls='ls -h --color=auto'
+alias ls='ls -h --group-directories-first --color=auto'
 alias ll='ls -lF'
 alias la='ls -la'
 alias lrt='ls -lrt'
@@ -11,6 +11,7 @@ alias psaux='ps aux | grep $USER'
 alias disk='du -h --max-depth=1 | sort -hr'
 alias rcp='rsync -ah --progress'
 alias findg='find . | grep'
+alias venv='source .venv/bin/activate'
 
 # GIT Commands
 alias gits='git status'
@@ -26,3 +27,4 @@ alias proj='cd /home/$USER/projects/'
 
 # Environment
 alias python='python3'
+alias pythonsrc='export PYTHONPATH=$(pwd)/src:$PYTHONPATH'
