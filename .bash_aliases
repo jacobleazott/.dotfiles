@@ -23,8 +23,8 @@ alias gitc='git checkout'
 alias gitclean='git rm -r --cached .'
 gitdiff()
 {
-  local base_branch=${1:-develop}
-  git diff --stat $(git merge-base HEAD “$base_branch”)
+  local base_branch=${1:-main}
+  git diff --stat $(git merge-base HEAD $base_branch)
 }
 
 # Shortcuts
