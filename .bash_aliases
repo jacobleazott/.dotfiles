@@ -21,11 +21,7 @@ alias gitush='git push'
 alias gitb='git checkout -b'
 alias gitc='git checkout'
 alias gitclean='git rm -r --cached .'
-gitdiff()
-{
-  local base_branch=${1:-main}
-  git diff --stat $(git merge-base HEAD $base_branch)
-}
+alias gitdiff='git diff --stat $(git merge-base HEAD ${1:-main})'
 
 # Shortcuts
 alias proj='cd /home/$USER/projects/'
