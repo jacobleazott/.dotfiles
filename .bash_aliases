@@ -12,6 +12,7 @@ alias disk='du -h --max-depth=1 | sort -hr'
 alias rcp='rsync -ah --progress'
 alias findg='find . | grep'
 alias venv='source .venv/bin/activate'
+alias scphere='echo $USER@$HOSTNAME:$PWD'
 
 # GIT Commands
 alias gits='git status'
@@ -29,3 +30,8 @@ alias proj='cd /home/$USER/projects/'
 # Environment
 alias python='python3'
 alias pythonsrc='export PYTHONPATH=$(pwd)/src:$PYTHONPATH'
+
+# Docker
+alias ddown='docker compose down'
+alias dup='docker compose up -d'
+alias dres='ddown && dup'
