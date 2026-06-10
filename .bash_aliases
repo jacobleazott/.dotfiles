@@ -26,6 +26,7 @@ alias gitdiff='git diff --stat $(git merge-base HEAD ${1:-main})'
 
 # Shortcuts
 alias proj='cd /home/$USER/projects/'
+alias dock='cd /home/$USER/homelab/docker'
 
 # Environment
 alias python='python3'
