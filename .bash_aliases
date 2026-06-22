@@ -36,3 +36,9 @@ alias pythonsrc='export PYTHONPATH=$(pwd)/src:$PYTHONPATH'
 alias ddown='docker compose down'
 alias dup='docker compose up -d'
 alias dres='ddown && dup'
+
+DOTFILES="$HOME/.dotfiles"
+
+source "$DOTFILES/utils.sh"
+source "$DOTFILES/tables.sh"
+source "$DOTFILES/docker.sh"
